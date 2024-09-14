@@ -127,7 +127,7 @@ function QuizGameStyles() {
         p {
             text-align: center;
             font-weight: 400;
-            font-family: cursive;
+            font-family: arial !important;
             position:relative;
         }
     `;
@@ -166,10 +166,11 @@ Ready to start? Go ahead and enter your first guess!`
     x.style.borderRadius = '5px';
     x.style.color = 'white'
 
-    const contact = document.createElement('p');
+    const contact = document.createElement('a');
     contact.textContent = 'contact developer!'
     contact.style.textDecoration = "underline";
     contact.style.marginLeft= "50%"
+    contact.href ="mailto:nourryahyaoui@gmail.com?subject=Feedback from your game";
 
 
     window.style.maxWidth = "800px";
@@ -194,16 +195,10 @@ Ready to start? Go ahead and enter your first guess!`
             window.style.display = 'none';
             root.style.display = 'block';
         })
-        let det = document.createElement('p');
-        det.textContent = 'Contact Nour yahyaoui'
         window.appendChild(p)
         document.body.appendChild(window);
         document.head.appendChild(style);
         window.appendChild(contact)
-        contact.addEventListener('click', () => {
-            window.location.href = "mailto:nourryahyaoui@gmail.com?subject=Feedback from your game";
-          });
-    
 }
 
 // end help window //
