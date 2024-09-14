@@ -114,8 +114,8 @@ function QuizGameStyles() {
             text-transform: uppercase;
         }
         input {
-            max-width: 200px;
-            height: 20px;
+            max-width: 240px;
+            height: 30px;
             border-radius: 10px;
             border: solid 1px gray;
             padding-left: 4px;
@@ -174,7 +174,7 @@ Ready to start? Go ahead and enter your first guess!`
     const contact = document.createElement('a');
     contact.textContent = 'contact developer!'
     contact.style.textDecoration = "underline";
-    contact.style.marginLeft= "50%"
+    contact.style.marginLeft= "40%"
     contact.href = "mailto:nourryahyaoui@gmail.com?subject=Feedback from your game";
 
 
