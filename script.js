@@ -69,7 +69,7 @@ function QuizGame() {
             p.textContent = "your choice is too big"
             p.style.color = "black"
          }
-         else if ((input.value > random) && ((input.value - random) < 10)) {
+         else if ((input.value >= random) && ((input.value - random) <= 10)) {
             p.textContent = "your choice is big"
             p.style.color = "black"
          }
@@ -77,7 +77,7 @@ function QuizGame() {
             p.textContent = "your choice is too small"
             p.style.color = "black"
          }
-         else if ((input.value < random) && ((random - input.value) < 10)) {
+         else if ((input.value <= random) && ((random - input.value) <= 10)) {
             p.textContent = "your choice is small"
             p.style.color = "black"
          }
@@ -114,8 +114,8 @@ function QuizGameStyles() {
             text-transform: uppercase;
         }
         input {
-            max-width: 240px;
-            height: 30px;
+            max-width: 200px;
+            height: 20px;
             border-radius: 10px;
             border: solid 1px gray;
             padding-left: 4px;
@@ -174,7 +174,7 @@ Ready to start? Go ahead and enter your first guess!`
     const contact = document.createElement('a');
     contact.textContent = 'contact developer!'
     contact.style.textDecoration = "underline";
-    contact.style.marginLeft= "40%"
+    contact.style.marginLeft= "50%"
     contact.href = "mailto:nourryahyaoui@gmail.com?subject=Feedback from your game";
 
 
