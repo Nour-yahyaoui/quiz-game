@@ -126,9 +126,14 @@ function QuizGameStyles() {
         }
         p {
             text-align: center;
-            font-weight: 400;
-            font-family: arial !important;
+            font-weight: 600;
+            color: gray;
+            font-size:16px;
             position:relative;
+        }
+        a {
+        font-weight: bold;
+        color:black;
         }
     `;
 
@@ -170,7 +175,7 @@ Ready to start? Go ahead and enter your first guess!`
     contact.textContent = 'contact developer!'
     contact.style.textDecoration = "underline";
     contact.style.marginLeft= "50%"
-    contact.href ="mailto:nourryahyaoui@gmail.com?subject=Feedback from your game";
+    contact.href = "mailto:nourryahyaoui@gmail.com?subject=Feedback from your game";
 
 
     window.style.maxWidth = "800px";
@@ -199,6 +204,7 @@ Ready to start? Go ahead and enter your first guess!`
         document.body.appendChild(window);
         document.head.appendChild(style);
         window.appendChild(contact)
+    
 }
 
 // end help window //
